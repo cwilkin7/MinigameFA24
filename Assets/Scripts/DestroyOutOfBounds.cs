@@ -1,11 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class DestroyOutOfBounds : MonoBehaviour
 {
-    public float speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +13,6 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        
     }
 }

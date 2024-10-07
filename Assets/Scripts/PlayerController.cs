@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float verticalInput;
+    public float horizontalInput;
     public float speed;
     public GameObject projectilePrefab;
     // Start is called before the first frame update
@@ -17,8 +18,10 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         verticalInput = Input.GetAxis("Vertical");
+        horizontalInput = Input.GetAxis("Horizontal");
 
         transform.Translate(Vector3.forward * Time.deltaTime * verticalInput);
+        transform.Translate(Vector3.up * Time.deltaTime * horizontalInput);
 
         if (Input.GetKeyDown(KeyCode.Space))
         {

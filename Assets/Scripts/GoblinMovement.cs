@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class GoblinMovement : MonoBehaviour
 {
     public float speed;
-    public float damage;
     // Start is called before the first frame update
     void Start()
     {

@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class CollisionDetection : MonoBehaviour
 {
-    public float speed;
-    public float damage;
+    private object currenthealth;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +16,10 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+       
     }
 }

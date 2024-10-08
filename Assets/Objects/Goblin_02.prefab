@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3592194204027681861}
   - component: {fileID: 7360765499902404633}
   - component: {fileID: 7207180651630270742}
+  - component: {fileID: 1903514779020207783}
   m_Layer: 0
   m_Name: Goblin_02
   m_TagString: Enemy
@@ -132,3 +133,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7444ff19686a3be40a59a7119e9927b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1903514779020207783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7546511066413546282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3259997083fd7d74fa504174631e724d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 5

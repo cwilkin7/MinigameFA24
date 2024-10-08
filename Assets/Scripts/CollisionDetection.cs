@@ -18,8 +18,9 @@ public class CollisionDetection : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
+        { }
        
     }
 }

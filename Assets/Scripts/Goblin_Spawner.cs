@@ -19,11 +19,14 @@ public class Goblin_Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        void SpawnThatGoblin()
+
+    }    
+    void SpawnThatGoblin()
+    {
         {
-            Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), spawnPosY, (spawnRangeZ));
+            Vector3 spawnPos = new Vector3(25, spawnPosY, Random.Range(-spawnRangeZ, spawnRangeZ));
             int GoblinDex = (int)Random.Range(spawnRangeX, goblinPrefabs.Length);
-            Instantiate(goblinPrefabs[GoblinDex], new Vector3(20, 2, 0), goblinPrefabs[GoblinDex].transform.rotation);
+            Instantiate(goblinPrefabs[GoblinDex],spawnPos, goblinPrefabs[GoblinDex].transform.rotation);
         }
     }
 }

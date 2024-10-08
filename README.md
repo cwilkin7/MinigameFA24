@@ -7,3 +7,5 @@ I designed it so that each goblin ran at a different speed and each of them had 
 Goblin 2 (The Speed Goblin) has 5 health and moves at a fast speed
 Goblin 1 (The Regular Goblin) has 20 health and moves at a moderate speed
 Goblin 3 (The Tough Goblin) has 50 health and moves at a slower speed
+!NOTE!
+W & S and A & D work as opposites. So W and S control left and right and A and D control up and down
